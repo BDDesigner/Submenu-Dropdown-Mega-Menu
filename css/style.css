@@ -1,0 +1,123 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Rubik:300,400,500,700,900');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+button:focus {
+	outline: 0;
+}
+body {
+	font-family: 'Rubik', sans-serif;
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: 400;
+	color: #595959;
+	background-image: url(../img/bg.jpg);
+	background-size: cover;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #404044
+}
+.menu-area{
+    background: #ddd;
+    position: relative;
+}
+.menu-area ul li{
+    display: inline-block;
+    position: relative;
+}
+.menu-area ul li a{
+    display: block;
+    padding: 20px; 
+    color: #fff;
+    transition: .3s;
+}
+.menu-area ul li:hover > a{
+    background: red;
+}
+/* submenu css */
+
+.menu-area ul li ul.submenu {
+	position: absolute;
+	width: 250px;
+	background: #666;
+	top: 110%;
+	left: 0;
+	transition: .3s;
+    opacity: 0;
+    visibility: hidden;
+}
+.menu-area ul li:hover > ul.submenu{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+.menu-area ul li ul.submenu li {
+	display: block;
+}
+.menu-area ul li ul.submenu li a {
+	padding: 15px 10px;
+}
+.menu-area ul li ul.submenu li ul.submenu {
+	left: 100%;
+	top: 0;
+}
+
+/* mega menu css */
+
+.menu-area ul li .mega-menu {
+	position: absolute;
+	width: 650px;
+	top: 110%;
+	background: #666;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    left: 0;
+    padding: 10px 20px;
+}
+.menu-area ul li:hover > .mega-menu{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+.menu-area ul li .mega-menu ul {
+	width: 33.33%;
+	float: left;
+	padding-right: 40px;
+}
+.menu-area ul li .mega-menu ul:last-child{
+    padding-right: 0;
+}
+.menu-area ul li .mega-menu ul li {
+	display: block;
+}
+.menu-area ul li .mega-menu ul li a {
+	padding: 15px 10px;
+}
+.menu-area ul li .mega-menu ul li.mega-title a {
+	font-weight: 700;
+	border-bottom: 1px solid #ddd;
+}
+.menu-area ul li.static{
+    position: static;
+}
+.menu-area ul li .mega-menu.full-mega{
+    width: 100%;
+}
+.menu-area ul li .mega-menu.full-mega ul{
+    width: 25%;
+}
+
